@@ -8,7 +8,7 @@ pipeline {
          
 
             // Run Maven on a Unix agent.
-            sh "./mvnw -Dmaven.test.failure.ignore=true clean package sonar:sonar"
+             sh "mvn -Dmaven.test.failure.ignore=true deploy sonar:sonar"
 
            
          }
