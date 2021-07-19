@@ -13,7 +13,7 @@ parallel {
 					withSonarQubeEnv('SonarQueb') {  
                  				
                        sh "./mvnw -Dmaven.test.failure.ignore=true clean package sonar:sonar"
-                       sh "cp -r target/*build${env.BUILD_NUMBER}.jar target/app.jar"
+                       sh "cp -r target/spring-petclinic-2.3.0.BUILD-SNAPSHOT.jar target/app.jar"
 		            
 		     
 
