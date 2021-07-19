@@ -12,7 +12,7 @@ parallel {
 					
 					withSonarQubeEnv('SonarQueb') {  
                  				
-                       sh "mvn -Dmaven.test.failure.ignore=true deploy sonar:sonar"
+                       sh "./mvnw -Dmaven.test.failure.ignore=true deploy sonar:sonar"
 		            
 		     
 
