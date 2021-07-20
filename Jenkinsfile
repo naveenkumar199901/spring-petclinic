@@ -3,7 +3,7 @@ pipeline {
     stages {
     stage('Build and Scan') {
       parallel {
-        stage('PackageApplication') {
+        stage('Application Deployment ') {
 
           steps {
 
