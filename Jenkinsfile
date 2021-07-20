@@ -7,7 +7,8 @@ node {
 	    	  
 	    stage('Build Project') {
 	      
-	       sh "./mvnw -Dmaven.test.failure.ignore=true clean package sonar:sonar"
+	       //sh "./mvnw -Dmaven.test.failure.ignore=true clean package sonar:sonar"
+                     sh "mvn clean package sonar:sonar"
 	    }
 			
 	    stage('Build Docker Image') {
