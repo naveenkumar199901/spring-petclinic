@@ -1,10 +1,6 @@
 pipeline {
   agent any
-  environment {
-    def dockerImage
-    def dockerImageTag = "petclinic${env.BUILD_NUMBER}"
-  }
-  stages {
+    stages {
     stage('Build and Scan') {
       parallel {
         stage('PackageApplication') {
